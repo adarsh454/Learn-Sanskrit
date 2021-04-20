@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.multiscreen">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Multiscreen">
+        <activity android:name=".ColorActivity"
+            android:label="@string/app_Cname"
+          android:parentActivityName=".MainActivity"  />
+        <activity android:name=".FamilyActivity"
+            android:label="@string/app_Fname"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".PhrasesActivity"
+            android:label="@string/app_Pname"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".NumbersActivity"
+            android:label="@string/app_Nname"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
